@@ -1,0 +1,64 @@
+
+@font-face {
+    font-family: PlusJakartaSans;
+    src: url(assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}  
+
+/* Customs Variables */
+:root {
+    /*Primary colors*/
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+
+    /*Neutral colors*/
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+/*General settings*/
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: PlusJakartaSans;
+    color: var(--Very-dark-blue);
+    background-color: var(--Light-grayish-blue-2);
+}
+p {    
+    font-size: 16px;
+}
+
+.notifications {
+    background-color: var(--White);
+    padding: 1em;
+    margin: 1em auto 1em auto;
+    max-width: 720px;
+    border-radius: 10px;
+}
+
+.notifications__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+.notifications__container__item {
+    background-color: var(--Light-grayish-blue-1);
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+}
+
