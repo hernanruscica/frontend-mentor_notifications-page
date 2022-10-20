@@ -19,16 +19,16 @@
   <main class="notifications">
     <header class = "notifications__header">
       <p class="notifications__header__title">
-        Notifications <span class="notifications__header__title__number">3</span>
+        Notifications <span class="notifications__header__title__number" id = "number-unreads">3</span>
       </p>
-      <a href="" class="notifications__header__enlace">Mark all as read</a>
+      <a href="" class="notifications__header__enlace" id="mark-as-read" >Mark all as read</a>
     </header>
 
     <!--Contains all the notifications-->
     <article class="notifications__container">
 
       <!--this is just one notification  -->
-      <section class="notifications__container__item">
+      <section class="notifications__container__item  unread" id ="notification">
         <div class="notifications__container__item__avatar">
           <img src="assets/images/avatar-mark-webber.webp" alt="" class="notificacion__container__item__avatar__img">
         </div>
@@ -47,7 +47,7 @@
       </section>     
 
       <!--this is just one notification  -->
-      <section class="notifications__container__item">
+      <section class="notifications__container__item unread" id ="notification01">
         <div class="notifications__container__item__avatar">
           <img src="assets/images/avatar-angela-gray.webp" alt="" class="notificacion__container__item__avatar__img">
         </div>
@@ -65,51 +65,114 @@
       </section>     
 
       <!--this is just one notification  -->
-      <section class="notifications__container__item">
-      <div class="notifications__container__item__avatar">
-        <img src="assets/images/avatar-jacob-thompson.webp" alt="" class="notificacion__container__item__avatar__img">
-      </div>
-      <div class="notifications__container__item__content">
-        <p class="notifications__container__item__content__resume">
-          <a class="notifications__container__item__content__resume__enlace" href="">Jacob Thompson</a> has joined your group 
-            <a class="notifications__container__item__content__resume__enlace dark-gray-blue" href="#">Chess Club</a>
-            <span  class="notifications__container__item__bullet" id = "notification-1-red-bullet">
-              &#149;
-            </span>
-        </p>
-        <p class="notifications__container__item__content__date">
-          1 day ago
-        </p>   
-      </div>
-    </section>     
+      <section class="notifications__container__item unread" id ="notification02">
+        <div class="notifications__container__item__avatar">
+          <img src="assets/images/avatar-jacob-thompson.webp" alt="" class="notificacion__container__item__avatar__img">
+        </div>
+        <div class="notifications__container__item__content">
+          <p class="notifications__container__item__content__resume">
+            <a class="notifications__container__item__content__resume__enlace" href="">Jacob Thompson</a> has joined your group 
+              <a class="notifications__container__item__content__resume__enlace dark-gray-blue" href="#">Chess Club</a>
+              <span  class="notifications__container__item__bullet" id = "notification-1-red-bullet">
+                &#149;
+              </span>
+          </p>
+          <p class="notifications__container__item__content__date">
+            1 day ago
+          </p>   
+        </div>
+      </section>     
 
+      <!--this is just one notification  -->
+      <section class="notifications__container__item unread" id ="notification03">
+        <div class="notifications__container__item__avatar">
+          <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="" class="notificacion__container__item__avatar__img">
+        </div>
+        <div class="notifications__container__item__content">
+          <p class="notifications__container__item__content__resume">
+            <a class="notifications__container__item__content__resume__enlace" href="">Rizky Hasanuddin</a> sent you a private message              
+              <span  class="notifications__container__item__bullet" id = "notification-1-red-bullet">
+                &#149;
+              </span>                         
+          </p>
+          <p class="notifications__container__item__content__date">
+            5 days ago
+          </p>  
+          <p class="notifications__container__item__content__message ">
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+            I'm already having lots of fun and improving my game.
+          </p>           
+        </div>
+      </section>     
+
+      <!--this is just one notification  -->
+      <section class="notifications__container__item read" id ="notification04">
+        <div class="notifications__container__item__avatar">
+          <img src="assets/images/avatar-kimberly-smith.webp" alt="" class="notificacion__container__item__avatar__img">
+        </div>
+        <div class="notifications__container__item__content">
+          <p class="notifications__container__item__content__resume">
+            <a class="notifications__container__item__content__resume__enlace" href="">Kimberly Smith</a> commented on your picture               
+              <span  class="notifications__container__item__bullet" id = "notification-1-red-bullet">
+                &#149;
+              </span>
+          </p>
+          <p class="notifications__container__item__content__date">
+            1 week ago
+          </p>   
+         
+        </div>
+        <img class="notifications__container__item__content__img" src="assets/images/image-chess.webp" alt="girl playing Chess">
+      </section>   
+
+      <!--this is just one notification  -->
+      <section class="notifications__container__item read"  id ="notification05">
+        <div class="notifications__container__item__avatar">
+          <img src="assets/images/avatar-nathan-peterson.webp" alt="" class="notificacion__container__item__avatar__img">
+        </div>
+        <div class="notifications__container__item__content">
+          <p class="notifications__container__item__content__resume">
+            <a class="notifications__container__item__content__resume__enlace" href="">Nathan Peterson</a> reacted to your recent post
+              <a class="notifications__container__item__content__resume__enlace dark-gray-blue" href="#">5 end-game strategies to increase your win rate</a>
+              <span  class="notifications__container__item__bullet" id = "notification-1-red-bullet">
+                &#149;
+              </span>
+          </p>
+          <p class="notifications__container__item__content__date">
+            2 weeks ago
+          </p>   
+        </div>
+      </section>
+
+      <!--this is just one notification  -->
+      <section class="notifications__container__item read"  id ="notificacion06">
+        <div class="notifications__container__item__avatar">
+          <img src="assets/images/avatar-anna-kim.webp" alt="" class="notificacion__container__item__avatar__img">
+        </div>
+        <div class="notifications__container__item__content">
+          <p class="notifications__container__item__content__resume">
+            <a class="notifications__container__item__content__resume__enlace" href="">Anna Kim</a> left the group 
+              <a class="notifications__container__item__content__resume__enlace dark-gray-blue" href="#">Chess Club</a>
+              <span  class="notifications__container__item__bullet" id = "notification-1-red-bullet">
+                &#149;
+              </span>
+          </p>
+          <p class="notifications__container__item__content__date">
+            2 weeks ago
+          </p>   
+        </div>
+      </section>     
     </article>
   
-  </main>
-   
-  
+  </main> 
 
-    
- 
 
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
-
-  Kimberly Smith commented on your picture
-  1 week ago
-
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
-
-  Anna Kim left the group Chess Club
-  2 weeks ago
-  
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="scripts.js"></script>
 </body>
 </html>

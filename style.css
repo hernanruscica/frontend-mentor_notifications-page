@@ -80,14 +80,25 @@ p {
     color: var(--Blue);
 }
 
-.notifications__container__item {
-    background-color: var(--Very-light-grayish-blue);
+.notifications__container__item {    
     padding: 1em 0;
     margin-bottom: 1em;
     display: flex;
     flex-direction: row;
     align-items: center;    
     border-radius: 10px;
+}
+
+.unread {
+    background-color: var(--Very-light-grayish-blue);
+}
+
+.unread .notifications__container__item__bullet{
+    display: inline;
+}
+
+.read .notifications__container__item__bullet{
+    display: none;
 }
 
 .notifications__container__item__avatar {
@@ -101,6 +112,12 @@ p {
     width: 50%;
     min-width: 40px;
     height: auto;
+}
+
+.notifications__container__item__content{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
 }
 
 .notifications__container__item__content__resume {
@@ -129,6 +146,30 @@ p {
 
 .notifications__container__item__content__date {
     color: var(--Grayish-blue);
+}
+
+.notifications__container__item__content__message{
+    border: solid var(--Light-grayish-blue-2) 2px;
+    margin: 0.8em 0;
+    padding: 1em 1.2em;
+    border-radius: 5px;
+    color: var(--Dark-grayish-blue);
+}
+
+.notifications__container__item__content__message:hover{
+    background-color: var(--Light-grayish-blue-2);
+    cursor: pointer;
+}
+
+.notifications__container__item__content__img{
+    width: 16%;
+    min-width: 50px;
+    max-width: 60px;
+    align-self: flex-start;
+}
+
+.notifications__container__item__content__img:hover{
+    cursor: pointer;
 }
 
 .bold {
