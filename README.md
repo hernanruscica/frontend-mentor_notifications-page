@@ -1,4 +1,5 @@
 # Frontend Mentor - Notifications page
+<a href="https://hernanruscica.github.io/frontend-mentor_notifications-page/" target = "_blank">live demo</a>
 
 ![Design preview for the Notifications page coding challenge](./design/desktop-preview.jpg)
 
